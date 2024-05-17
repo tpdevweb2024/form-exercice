@@ -64,3 +64,5 @@ $arrayAllChars = ["a", "b", "c", "d", "e",  "f", "g", "h", "i", "j", "k", "l", "
 $name = bin2hex(random_bytes(20)) . time() . ".$extension";
 
 move_uploaded_file($file["tmp_name"], "../uploads/$name");
+
+header("Location: /");
